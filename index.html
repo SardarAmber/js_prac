@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise</title>
+</head>
+    <h1 id="title" onclick="changeColors()">
+        My Simple Webpage
+    </h1>
+
+    <body onload="hi()">
+    <article>
+ <p id="p1" onmouseenter="first(); third();">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+  </p>
+
+  <p id="p2" ondblclick="dbsecond()">
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+  </p>
+
+  <p id="p3">
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+  </p>
+
+  <p id="p4" onclick="resetColor()">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+  </p>
+
+</article>
+    
+</body>
+
+
+    <script>
+     
+     function hi() {
+    alert ("Welcome to my page!");
+   }
+
+   function first() {
+
+    document.getElementById ("p1").style.backgroundColor = "pink";
+   }
+
+
+    function third() {
+      document.getElementById("p3").style.backgroundColor = "lightgreen";
+    }
+
+   function dbsecond(){
+    alert("you double clicked the 2nd paragraph!")
+   }
+
+   function resetColor() {
+    document.getElementById("p4").style.background = "blue";
+   }
+
+    </script>
+</body> 
+</html>
+
+  
+
+
